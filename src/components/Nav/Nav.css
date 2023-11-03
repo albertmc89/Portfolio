@@ -1,0 +1,31 @@
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  height: 17vh;
+  align-items: center;
+  font-size: 1.125rem;
+}
+
+.navigation__list {
+  display: flex;
+  gap: 24px;
+}
+
+.navigation__link {
+  text-decoration-color: white;
+}
+
+.navigation__link:hover {
+  color: rgb(145, 143, 143);
+  text-decoration: underline;
+  text-underline-offset: 0.9rem;
+}
+
+.logo {
+  font-size: 1.6rem;
+}
+
+.logo:hover {
+  cursor: default;
+}

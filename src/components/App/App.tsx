@@ -1,5 +1,11 @@
+import Navigation from "../Nav/Nav";
+
 const App = (): React.ReactElement => {
-  return <p>Hello world!</p>;
+  return (
+    <div className="container">
+      <Navigation />
+    </div>
+  );
 };
 
 export default App;
