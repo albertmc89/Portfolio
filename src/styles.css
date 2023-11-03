@@ -11,6 +11,7 @@ html {
 
 body {
   margin: 0;
+  background-color: rgba(234, 232, 232, 0.788);
 }
 
 ul,
@@ -39,6 +40,10 @@ a {
 
 h1,
 h2 {
+  margin: 0;
+}
+
+p {
   margin: 0;
 }
 
