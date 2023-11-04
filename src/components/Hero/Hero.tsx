@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+import Button from "../Button/Button";
 import "./Hero.css";
 
 const Hero = () => {
@@ -14,24 +16,32 @@ const Hero = () => {
         <p className="section__subtext">Hi! 👋, Im</p>
         <h1 className="section__title">Albert Colubi</h1>
         <p className="section__role">Full-Stack Developer</p>
-        <div>
-          <button>Download CV</button>
-          <button>Contact info</button>
+        <div className="button-container">
+          <Button className="button--solid">Download CV</Button>
+          <NavLink className="button--opacity" to={"/contact"}>
+            Contact info
+          </NavLink>
         </div>
         <div className="social-container">
-          <img
-            src="/img/github.svg"
-            alt="the github black and white logo"
-            width={40}
-            height={40}
-          />
-          <img
-            className="linkedin"
-            src="/img/linkedin.svg"
-            alt="My linkedin profile"
-            width={40}
-            height={40}
-          />
+          <NavLink to={"https://github.com/albertmc89"}>
+            <img
+              src="/img/github.svg"
+              alt="the github black and white logo"
+              width={40}
+              height={40}
+            />
+          </NavLink>
+          <NavLink
+            to={"https://www.linkedin.com/in/albert-colubi-moyano-8380a9281/"}
+          >
+            <img
+              className="linkedin"
+              src="/img/linkedin.svg"
+              alt="My linkedin profile"
+              width={40}
+              height={40}
+            />
+          </NavLink>
         </div>
       </div>
     </section>
