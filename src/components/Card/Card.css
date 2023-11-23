@@ -14,8 +14,6 @@
 .project__image {
   border-radius: 5px;
   overflow: hidden;
-  object-fit: contain;
-  transition: margin-right ease-in-out 1s;
 }
 
 .project__title {
@@ -32,6 +30,31 @@
 
 .skills__title {
   font-weight: 700;
+}
+
+.live-demo-container {
+  font-size: 0.8rem;
+  font-weight: 700;
+  border: 2px solid white;
+  border-radius: 30px;
+}
+
+.live-demo-container:hover {
+  background-color: white;
+  color: black;
+}
+
+.live-demo-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 115px;
+  height: 40px;
+  color: rgb(255, 255, 255);
+}
+
+.live-demo-link:hover {
+  color: black;
 }
 
 @media screen and (min-width: 760px) {

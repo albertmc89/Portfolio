@@ -8,7 +8,11 @@ const Portfolio = (): React.ReactElement => {
         <h1 className="projects-title">My projects</h1>
         <ul className="projects">
           <li className="projects__portfolio">
-            <Card img={"/img/proyecto1.webp"} title={"Fantasy Legends"} />
+            <Card
+              img={"/img/proyecto1.webp"}
+              title={"Fantasy Legends"}
+              url="https://fantasy-legends.netlify.app"
+            />
           </li>
         </ul>
       </section>

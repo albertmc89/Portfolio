@@ -15,9 +15,10 @@ function useParallax(value: MotionValue<number>, distance: number) {
 interface CardProps {
   img: string;
   title: string;
+  url: string;
 }
 
-const Card = ({ img, title }: CardProps) => {
+const Card = ({ img, title, url }: CardProps) => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({ target: ref });
   const y = useParallax(scrollYProgress, 100);
@@ -70,6 +71,11 @@ const Card = ({ img, title }: CardProps) => {
           width={30}
           height={30}
         />
+      </div>
+      <div className="live-demo-container">
+        <a className="live-demo-link" href={url}>
+          Live demo
+        </a>
       </div>
     </article>
   );
