@@ -5,4 +5,5 @@ export interface PathsStructure {
   error: string;
   projects: string;
   contact: string;
+  home: string;
 }

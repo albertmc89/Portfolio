@@ -1,31 +1,35 @@
 .navigation {
+  background-color: rgba(45, 44, 44, 0.523);
+  position: fixed;
+  border-radius: 10px;
+  margin: auto;
+  bottom: 10px;
+  right: 0;
+  left: 0;
   display: flex;
-  justify-content: space-around;
-  padding: 20px;
-  height: 17vh;
+  justify-content: center;
+  padding: 10px;
   align-items: center;
-  font-size: 1.125rem;
+  font-size: 0.8rem;
+  width: 280px;
 }
 
 .navigation__list {
   display: flex;
+  padding: 10px;
   gap: 24px;
 }
 
 .navigation__link {
   text-decoration-color: white;
+  cursor: pointer;
 }
 
 .navigation__link:hover {
-  color: rgb(145, 143, 143);
+  color: rgb(224, 221, 221);
   text-decoration: underline;
-  text-underline-offset: 0.9rem;
+  text-underline-offset: 0.5rem;
 }
 
-.logo {
-  font-size: 1.6rem;
-}
-
-.logo:hover {
-  cursor: default;
+@media screen and (min-width: 760px) {
 }

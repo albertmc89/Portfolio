@@ -1,0 +1,41 @@
+.project {
+  width: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgba(56, 58, 61, 0.464);
+}
+
+.project__image {
+  border-radius: 5px;
+  overflow: hidden;
+  object-fit: contain;
+  transition: margin-right ease-in-out 1s;
+}
+
+.project__title {
+  font-size: 1.1rem;
+}
+
+.projects__skills {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.skills__title {
+  font-weight: 700;
+}
+
+@media screen and (min-width: 760px) {
+  .project__title {
+    left: 200px;
+  }
+}
