@@ -1,10 +1,11 @@
-import { ButtonHTMLAttributes } from "react";
+import { ButtonHTMLAttributes, Dispatch, SetStateAction } from "react";
 import "./Button.css";
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   className?: string;
   actionOnClick?: () => void;
   text?: string;
+  setOpen?: Dispatch<SetStateAction<boolean>>;
 }
 
 const Button = ({

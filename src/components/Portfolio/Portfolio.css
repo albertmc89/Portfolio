@@ -1,0 +1,28 @@
+.portfolio {
+  height: 100vh;
+  background: url("/public/img/background-desktop.webp");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio-project__title {
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 760px) {
+  .portfolio-project__title {
+    font-size: 3rem;
+  }
+}
