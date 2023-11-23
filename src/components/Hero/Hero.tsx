@@ -49,6 +49,8 @@ const Hero = () => {
                 "Git",
                 "Postman",
                 "Supertest",
+                "Jest",
+                "Vite",
               ]}
               cursor
               cursorStyle="_"
