@@ -3,6 +3,7 @@ import Button from "../Button/Button";
 import "./Hero.css";
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
+import { Link } from "react-scroll";
 
 const Hero = () => {
   return (
@@ -58,9 +59,9 @@ const Hero = () => {
           </span>
           <div className="button-container">
             <Button className="button--solid">Download CV</Button>
-            <NavLink className="button--opacity" to={"/contact"}>
+            <Link className="button--opacity" to="contact">
               Contact info
-            </NavLink>
+            </Link>
           </div>
           <div className="social-container">
             <NavLink to={"https://github.com/albertmc89"}>
