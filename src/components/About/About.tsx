@@ -5,7 +5,7 @@ const About = () => {
   return (
     <>
       <section id="about" className="section__about">
-        <h2 className="about__title">About me</h2>
+        <h2 className="section__title">About me</h2>
         <p className="about__text">
           I am thrilled to dive headfirst into the exciting world of
           programming! With a burning passion for technology and a strong desire
@@ -18,7 +18,7 @@ const About = () => {
           determination to help a team succeed in this ever-evolving field of
           programming.
         </p>
-        <NavLink to={"https://www.instagram.com/"}>
+        <NavLink to={"https://www.instagram.com/albertmc89/"}>
           <img
             className="instagram"
             src="/img/instagram.svg"

@@ -4,8 +4,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 20px;
-  border: 1px solid rgb(255, 255, 255);
+  gap: 15px;
+  border: 3px solid rgba(243, 240, 240, 0.687);
   border-radius: 10px;
   padding: 10px;
   background-color: rgba(56, 58, 61, 0.464);
@@ -14,6 +14,15 @@
 .project__image {
   border-radius: 5px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+img {
+  object-fit: cover;
+  object-position: top;
 }
 
 .project__title {
@@ -55,6 +64,22 @@
 
 .live-demo-link:hover {
   color: black;
+}
+
+.carrusel__imgs {
+  flex: 0 0 200px;
+  margin: 0 20px 0 0;
+}
+
+.carrusel__imgs:last-of-type {
+  margin: 0;
+}
+
+.carrusel {
+  display: flex;
+  overflow-x: scroll;
+  margin: 0 auto;
+  border: 2px dotted rgba(255, 255, 255, 0.715);
 }
 
 @media screen and (min-width: 760px) {
