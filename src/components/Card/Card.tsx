@@ -14,11 +14,14 @@ function useParallax(value: MotionValue<number>, distance: number) {
 
 interface CardProps {
   img: string;
+  img2?: string;
+  img3?: string;
+  img4?: string;
   title: string;
   url: string;
 }
 
-const Card = ({ img, title, url }: CardProps) => {
+const Card = ({ img, img2, img3, img4, title, url }: CardProps) => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({ target: ref });
   const y = useParallax(scrollYProgress, 100);
@@ -29,14 +32,47 @@ const Card = ({ img, title, url }: CardProps) => {
         {title}
       </motion.h2>
       <div className="project__image" ref={ref}>
+        <ul className="carrusel">
+          <li className="carrusel__imgs">
+            <img
+              src={img}
+              alt={`project fullstack ${title}`}
+              height={200}
+              width={200}
+            />
+          </li>
+          <li className="carrusel__imgs">
+            <img
+              src={img2}
+              alt={`project fullstack ${title}`}
+              height={200}
+              width={200}
+            />
+          </li>
+          <li className="carrusel__imgs">
+            <img
+              src={img3}
+              alt={`project fullstack ${title}`}
+              height={200}
+              width={200}
+            />
+          </li>
+          <li className="carrusel__imgs">
+            <img
+              src={img4}
+              alt={`project fullstack ${title}`}
+              height={200}
+              width={200}
+            />
+          </li>
+        </ul>
         <img
-          src={img}
-          alt={`project fullstack ${title}`}
-          height={200}
-          width={200}
+          src="/img/scroll.png"
+          alt="the scroll icon"
+          width={30}
+          height={30}
         />
       </div>
-      <span className="skills__title">STACK</span>
       <div className="projects__skills">
         <img
           src="/img/typescript.svg"
