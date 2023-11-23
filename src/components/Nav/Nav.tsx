@@ -1,6 +1,7 @@
-import { NavLink, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import paths from "../../paths/paths";
 import "./Nav.css";
+import { Link } from "react-scroll";
 
 const Navigation = (): React.ReactElement => {
   const { pathname } = useLocation();
@@ -8,55 +9,56 @@ const Navigation = (): React.ReactElement => {
   return (
     <>
       <nav className="navigation">
-        <div className="logo">Albert Colubi</div>
         <ul className="navigation__list">
           <li className="navigation__link">
-            <NavLink
+            <Link
+              className={
+                pathname === paths.home
+                  ? "navigation-list__active"
+                  : "navigation-list__inactive"
+              }
+              to="home"
+              spy={true}
+            >
+              Home
+            </Link>
+          </li>
+          <li className="navigation__link">
+            <Link
               className={
                 pathname === paths.about
                   ? "navigation-list__active"
                   : "navigation-list__inactive"
               }
-              to="/about"
+              to="about"
+              spy={true}
             >
               About
-            </NavLink>
+            </Link>
           </li>
           <li className="navigation__link">
-            <NavLink
-              className={
-                pathname === paths.experience
-                  ? "navigation-list__active"
-                  : "navigation-list__inactive"
-              }
-              to="/experience"
-            >
-              Experience
-            </NavLink>
-          </li>
-          <li className="navigation__link">
-            <NavLink
+            <Link
               className={
                 pathname === paths.projects
                   ? "navigation-list__active"
                   : "navigation-list__inactive"
               }
-              to="/projects"
+              to="projects"
             >
               Projects
-            </NavLink>
+            </Link>
           </li>
           <li className="navigation__link">
-            <NavLink
+            <Link
               className={
                 pathname === paths.contact
                   ? "navigation-list__active"
                   : "navigation-list__inactive"
               }
-              to="/contact"
+              to="contact"
             >
               Contact
-            </NavLink>
+            </Link>
           </li>
         </ul>
       </nav>
