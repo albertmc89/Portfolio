@@ -107,6 +107,7 @@ const Card = ({ img, img2, img3, img4, title, url }: CardProps) => {
           width={30}
           height={30}
         />
+        <img src="/img/jest.png" alt="the jest logo" width={30} height={30} />
       </div>
       <div className="live-demo-container">
         <a className="live-demo-link" href={url}>

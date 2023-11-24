@@ -18,15 +18,26 @@ const About = () => {
           determination to help a team succeed in this ever-evolving field of
           programming.
         </p>
-        <NavLink to={"https://www.instagram.com/albertmc89/"}>
-          <img
-            className="instagram"
-            src="/img/instagram.svg"
-            alt="My instagram profile"
-            width={45}
-            height={45}
-          />
-        </NavLink>
+        <div className="section__social-media">
+          <NavLink to={"https://www.instagram.com/albertmc89/"}>
+            <img
+              className="instagram"
+              src="/img/instagram.svg"
+              alt="My instagram profile"
+              width={45}
+              height={45}
+            />
+          </NavLink>
+          <NavLink to={"https://twitter.com/AColDev89"}>
+            <img
+              className="twitter"
+              src="/img/twitter.svg"
+              alt="My twitter profile"
+              width={45}
+              height={45}
+            />
+          </NavLink>
+        </div>
       </section>
     </>
   );
