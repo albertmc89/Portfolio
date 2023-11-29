@@ -12,6 +12,7 @@
 }
 
 .about__text {
+  max-width: 1000px;
   padding: 20px;
   color: white;
   text-align: center;
