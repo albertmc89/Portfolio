@@ -1,9 +1,9 @@
 import { NavLink } from "react-router-dom";
-import Button from "../Button/Button";
 import "./Hero.css";
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
 import { Link } from "react-scroll";
+import resume from "../../../public/albertCV.pdf";
 
 const Hero = () => {
   return (
@@ -60,7 +60,9 @@ const Hero = () => {
             />
           </span>
           <div className="button-container">
-            <Button className="button--solid">Download CV</Button>
+            <a className="button--solid" href={resume} download="AlbertCV">
+              Download CV
+            </a>
             <Link className="button--opacity" to="contact">
               Contact info
             </Link>

@@ -73,9 +73,15 @@
 }
 
 .button--solid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   font-size: 0.7rem;
   border: 2px solid white;
   border-radius: 30px;
+  width: 115px;
+  height: 40px;
 }
 
 .button--opacity {
