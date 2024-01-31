@@ -17,11 +17,26 @@ interface CardProps {
   img2?: string;
   img3?: string;
   img4?: string;
+  img5?: string;
+  img6?: string;
+  img7?: string;
+  img8?: string;
   title: string;
   url: string;
 }
 
-const Card = ({ img, img2, img3, img4, title, url }: CardProps) => {
+const Card = ({
+  img,
+  img2,
+  img3,
+  img4,
+  img5,
+  img6,
+  img7,
+  img8,
+  title,
+  url,
+}: CardProps) => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({ target: ref });
   const y = useParallax(scrollYProgress, 100);
@@ -60,6 +75,38 @@ const Card = ({ img, img2, img3, img4, title, url }: CardProps) => {
           <li className="carrusel__imgs">
             <img
               src={img4}
+              alt={`project fullstack ${title}`}
+              height={200}
+              width={200}
+            />
+          </li>
+          <li className="carrusel__imgs">
+            <img
+              src={img5}
+              alt={`project fullstack ${title}`}
+              height={200}
+              width={200}
+            />
+          </li>
+          <li className="carrusel__imgs">
+            <img
+              src={img6}
+              alt={`project fullstack ${title}`}
+              height={200}
+              width={200}
+            />
+          </li>
+          <li className="carrusel__imgs">
+            <img
+              src={img7}
+              alt={`project fullstack ${title}`}
+              height={200}
+              width={200}
+            />
+          </li>
+          <li className="carrusel__imgs">
+            <img
+              src={img8}
               alt={`project fullstack ${title}`}
               height={200}
               width={200}
@@ -107,7 +154,6 @@ const Card = ({ img, img2, img3, img4, title, url }: CardProps) => {
           width={30}
           height={30}
         />
-        <img src="/img/jest.png" alt="the jest logo" width={30} height={30} />
       </div>
       <div className="live-demo-container">
         <a className="live-demo-link" href={url}>
