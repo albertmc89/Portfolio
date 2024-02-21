@@ -7,6 +7,8 @@ import {
 } from "framer-motion";
 import { useRef } from "react";
 import "./Card.css";
+import link from "/img/link.png";
+import { useTranslation } from "react-i18next";
 
 function useParallax(value: MotionValue<number>, distance: number) {
   return useTransform(value, [0, 1], [-distance, distance]);
@@ -40,6 +42,7 @@ const Card = ({
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({ target: ref });
   const y = useParallax(scrollYProgress, 100);
+  const [text, _i18n] = useTranslation("global");
 
   return (
     <article className="project">
@@ -135,12 +138,6 @@ const Card = ({
           height={30}
         />
         <img
-          src="/img/mongodb.svg"
-          alt="the mongodb logo"
-          width={30}
-          height={30}
-        />
-        <img
           src="/img/firebase.svg"
           alt="the firebase logo"
           width={30}
@@ -156,9 +153,8 @@ const Card = ({
         />
       </div>
       <div className="live-demo-container">
-        <a className="live-demo-link" href={url}>
-          Live demo
-        </a>
+        <a href={url}>{text("projects.projects-demo")}</a>
+        <img src={link} alt="link to the site" width="18" height="18" />
       </div>
     </article>
   );

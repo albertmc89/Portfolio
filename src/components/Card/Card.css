@@ -1,5 +1,5 @@
 .project {
-  width: 220px;
+  width: 280px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,21 +45,19 @@ img {
   font-size: 0.8rem;
   font-weight: 700;
   border: 2px solid white;
-  border-radius: 30px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 125px;
+  color: rgb(255, 255, 255);
+  height: 40px;
+  gap: 5px;
 }
 
 .live-demo-container:hover {
   background-color: white;
   color: black;
-}
-
-.live-demo-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 115px;
-  height: 40px;
-  color: rgb(255, 255, 255);
 }
 
 .live-demo-link:hover {
@@ -80,7 +78,7 @@ img {
   overflow-x: scroll;
   margin: 0 auto;
   border: 3px solid rgba(8, 8, 8, 0.947);
-  box-shadow: 1px 3px 22px rgba(253, 253, 253, 0.502);
+  box-shadow: 4px 5px 35px rgba(0, 195, 255, 0.555);
 }
 
 @media screen and (min-width: 760px) {

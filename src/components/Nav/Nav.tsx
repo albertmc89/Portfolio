@@ -2,9 +2,26 @@ import { useLocation } from "react-router-dom";
 import paths from "../../paths/paths";
 import "./Nav.css";
 import { Link } from "react-scroll";
+import home from "/img/home.png";
+import about from "/img/about.png";
+import projects from "/img/projects.png";
+import contact from "/img/contact.png";
+import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const Navigation = (): React.ReactElement => {
   const { pathname } = useLocation();
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth > 600);
+  const [text, i18n] = useTranslation("global");
+
+  const updateNav = () => {
+    setIsDesktop(window.innerWidth > 600);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", updateNav);
+    return () => window.removeEventListener("resize", updateNav);
+  });
 
   return (
     <>
@@ -20,7 +37,11 @@ const Navigation = (): React.ReactElement => {
               to="home"
               spy={true}
             >
-              Home
+              {!isDesktop ? (
+                <img src={home} alt="home icon" width="24" height="24" />
+              ) : (
+                text("home.home")
+              )}
             </Link>
           </li>
           <li className="navigation__link">
@@ -33,7 +54,11 @@ const Navigation = (): React.ReactElement => {
               to="about"
               spy={true}
             >
-              About
+              {!isDesktop ? (
+                <img src={about} alt="home icon" width="24" height="24" />
+              ) : (
+                text("about.about")
+              )}
             </Link>
           </li>
           <li className="navigation__link">
@@ -45,7 +70,11 @@ const Navigation = (): React.ReactElement => {
               }
               to="projects"
             >
-              Projects
+              {!isDesktop ? (
+                <img src={projects} alt="home icon" width="24" height="24" />
+              ) : (
+                text("projects.projects")
+              )}
             </Link>
           </li>
           <li className="navigation__link">
@@ -57,10 +86,30 @@ const Navigation = (): React.ReactElement => {
               }
               to="contact"
             >
-              Contact
+              {!isDesktop ? (
+                <img src={contact} alt="home icon" width="24" height="24" />
+              ) : (
+                text("contact.contact")
+              )}
             </Link>
           </li>
         </ul>
+        <div className="wrap-toggle">
+          <button
+            onClick={() => {
+              i18n.changeLanguage("en");
+            }}
+          >
+            <span className="flags">🇺🇸</span>
+          </button>
+          <button
+            onClick={() => {
+              i18n.changeLanguage("es");
+            }}
+          >
+            <span className="flags">🇪🇸</span>
+          </button>
+        </div>
       </nav>
     </>
   );

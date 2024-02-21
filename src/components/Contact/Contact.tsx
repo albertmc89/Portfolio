@@ -1,10 +1,13 @@
 import { motion } from "framer-motion";
 import "./Contact.css";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const [text, _i18n] = useTranslation("global");
+
   return (
     <section className="contact" id="contact">
-      <h2 className="section__title">Contact Me</h2>
+      <h2 className="section__title">{text("contact.contact-title")}</h2>
       <motion.div
         className="contact-info-upper-container"
         animate={{

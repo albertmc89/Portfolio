@@ -1,11 +1,13 @@
+import { useTranslation } from "react-i18next";
 import Card from "../Card/Card";
 import "./Portfolio.css";
 
 const Portfolio = (): React.ReactElement => {
+  const [text, _i18n] = useTranslation("global");
   return (
     <>
       <section className="portfolio" id="projects">
-        <h1 className="section__title">My projects</h1>
+        <h1 className="section__title">{text("projects.projects-title")}</h1>
         <ul className="projects">
           <li className="projects__portfolio">
             <Card
@@ -25,13 +27,13 @@ const Portfolio = (): React.ReactElement => {
             <Card
               img={"/img/ProjectNetflix1.webp"}
               img2={"/img/ProjectNetflix2.webp"}
-              img3={"/img/ProjectNetflix3.webp"}
-              img4={"/img/ProjectNetflix4.webp"}
+              img3={"/img/ProjectNetflix9.webp"}
+              img4={"/img/ProjectNetflix8.webp"}
               img5={"/img/ProjectNetflix5.webp"}
               img6={"/img/ProjectNetflix6.webp"}
-              img7={"/img/ProjectNetflix7.webp"}
-              img8={"/img/ProjectNetflix7.webp"}
-              title={"Netflix clone WIP"}
+              img7={"/img/ProjectNetflix3.webp"}
+              img8={"/img/ProjectNetflix4.webp"}
+              title={"'Netflix' clone WIP"}
               url="https://colnetflix-clone.netlify.app"
             />
           </li>
