@@ -4,8 +4,10 @@ import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
 import { Link } from "react-scroll";
 import resume from "../../../public/albertCV.pdf";
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
+  const [text, _i18n] = useTranslation("global");
   return (
     <>
       <motion.section
@@ -25,7 +27,7 @@ const Hero = () => {
           />
         </div>
         <div className="section__text">
-          <p className="section__subtext">Hi! 👋, Im</p>
+          <p className="section__subtext">{text("home.home-title")}</p>
           <h1 className="section__title">
             <Typewriter
               words={["Albert Colubi"]}
@@ -34,7 +36,7 @@ const Hero = () => {
               loop={1}
             />
           </h1>
-          <p className="section__role">Full-Stack Developer</p>
+          <p className="section__role">{text("home.home-role")}</p>
           <span className="section__skills">
             <Typewriter
               words={[
@@ -61,10 +63,10 @@ const Hero = () => {
           </span>
           <div className="button-container">
             <a className="button--solid" href={resume} download="AlbertCV">
-              Download CV
+              {text("home.home-download")}
             </a>
             <Link className="button--opacity" to="contact">
-              Contact info
+              {text("home.home-contact")}
             </Link>
           </div>
           <div className="social-container">

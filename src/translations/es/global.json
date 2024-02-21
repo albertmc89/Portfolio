@@ -1,0 +1,26 @@
+{
+  "home": {
+    "home": "Inicio",
+    "home-title": "Hola! 👋, soy",
+    "home-role": "Desarrollador FullStack",
+    "home-download": "Descargar CV",
+    "home-contact": "Contáctame"
+  },
+  "about": {
+    "about-title": "Sobre mi",
+    "about-education": "Educación",
+    "about-role1": "Desarrollo web FullStack",
+    "about-role2": "Grado en Administración y dirección de empresas",
+    "about": "Sobre mi",
+    "about-text": "Mi nombre es Albert, con 10 años de experiencia en bienes raíces. Decidí estudiar desarrollo web en Barcelona para ampliar mis habilidades. Busco colaborar con profesionales y equipos dinámicos. Me apasiona crear soluciones innovadoras y perfeccionar proyectos existentes. Estoy abierto a diferentes formas de trabajo, con un enfoque en aprender y crecer constantemente."
+  },
+  "projects": {
+    "projects": "Proyectos",
+    "projects-title": "Mis proyectos",
+    "projects-demo": "Prueba"
+  },
+  "contact": {
+    "contact": "Contacto",
+    "contact-title": "Contáctame"
+  }
+}
