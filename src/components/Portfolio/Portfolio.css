@@ -1,8 +1,4 @@
 .portfolio {
-  background: url("/public/img/background-desktop.webp");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,4 +13,12 @@
   justify-content: center;
   flex-direction: column;
   gap: 40px;
+}
+
+@media (min-width: 900px) {
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
 }
