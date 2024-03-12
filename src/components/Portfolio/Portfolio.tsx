@@ -37,6 +37,20 @@ const Portfolio = (): React.ReactElement => {
               url="https://colnetflix-clone.netlify.app"
             />
           </li>
+          <li className="projects__portfolio">
+            <Card
+              img={"/img/invest1.webp"}
+              img2={"/img/invest2.webp"}
+              img3={"/img/invest3.webp"}
+              img4={"/img/invest4.webp"}
+              img5={"/img/invest5.webp"}
+              img6={"/img/invest6.webp"}
+              img7={"/img/invest7.webp"}
+              img8={"/img/invest8.webp"}
+              title={"InvestWise"}
+              url="https://investwise.netlify.app"
+            />
+          </li>
         </ul>
       </section>
     </>

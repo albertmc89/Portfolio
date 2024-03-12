@@ -40,6 +40,7 @@ const Hero = () => {
           <span className="section__skills">
             <Typewriter
               words={[
+                "HTML",
                 "Javascript - TypeScript",
                 "CSS",
                 "React",
@@ -50,6 +51,7 @@ const Hero = () => {
                 "MongoDB",
                 "Git",
                 "Postman",
+                "SonarCloud",
                 "Supertest",
                 "Jest",
                 "Vite",
