@@ -49,15 +49,6 @@ const About = () => {
           </ul>
         </article>
         <div className="section__social-media">
-          <NavLink to={"https://www.instagram.com/albertmc89/"}>
-            <img
-              className="instagram"
-              src="/img/instagram.svg"
-              alt="My instagram profile"
-              width={45}
-              height={45}
-            />
-          </NavLink>
           <NavLink to={"https://twitter.com/AColDev89"}>
             <img
               className="twitter"

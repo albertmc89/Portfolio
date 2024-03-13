@@ -21,6 +21,15 @@ const Portfolio = (): React.ReactElement => {
               img8={"/img/proyecto1H.webp"}
               title={"Fantasy Legends"}
               url="https://fantasy-legends.netlify.app"
+              tool={"TypeScript"}
+              tool2={"ReactJS"}
+              tool3={"NodeJS"}
+              tool4={"Redux"}
+              tool5={"Express.js"}
+              tool6={"MongoDB"}
+              tool7={"Firebase"}
+              description={text("description.description-players")}
+              stacks={"Fullstack"}
             />
           </li>
           <li className="projects__portfolio">
@@ -35,6 +44,14 @@ const Portfolio = (): React.ReactElement => {
               img8={"/img/ProjectNetflix4.webp"}
               title={"'Netflix' clone WIP"}
               url="https://colnetflix-clone.netlify.app"
+              tool={"TypeScript"}
+              tool2={"ReactJS"}
+              tool3={"NodeJS"}
+              tool4={"Redux"}
+              tool5={"Firebase"}
+              tool6={"Axios"}
+              description={text("description.description-netflix")}
+              stacks={"Frontend"}
             />
           </li>
           <li className="projects__portfolio">
@@ -49,6 +66,15 @@ const Portfolio = (): React.ReactElement => {
               img8={"/img/invest8.webp"}
               title={"InvestWise"}
               url="https://investwise.netlify.app"
+              tool={"TypeScript"}
+              tool2={"ReactJS"}
+              tool3={"NodeJS"}
+              tool4={"Redux"}
+              tool5={"Express.js"}
+              tool6={"MongoDB"}
+              tool7={"Firebase"}
+              description={text("description.description-investwise")}
+              stacks={"Fullstack"}
             />
           </li>
         </ul>

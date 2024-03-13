@@ -2,7 +2,6 @@ import { NavLink } from "react-router-dom";
 import "./Hero.css";
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
-import { Link } from "react-scroll";
 import resume from "../../../public/albertCV.pdf";
 import { useTranslation } from "react-i18next";
 
@@ -67,9 +66,15 @@ const Hero = () => {
             <a className="button--solid" href={resume} download="AlbertCV">
               {text("home.home-download")}
             </a>
-            <Link className="button--opacity" to="contact">
-              {text("home.home-contact")}
-            </Link>
+            <div className="button--solid">
+              <img
+                src="/img/email.png"
+                alt="Email icon"
+                width="22"
+                height="22"
+              />
+              <a href="mailto:albertmc89@gmail.com">albertmc89@gmail.com</a>
+            </div>
           </div>
           <div className="social-container">
             <NavLink to={"https://github.com/albertmc89"}>
