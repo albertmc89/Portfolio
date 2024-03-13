@@ -25,6 +25,16 @@ interface CardProps {
   img8?: string;
   title: string;
   url: string;
+  tool: string;
+  tool2?: string;
+  tool3?: string;
+  tool4?: string;
+  tool5?: string;
+  tool6?: string;
+  tool7?: string;
+  tool8?: string;
+  description: string;
+  stacks: string;
 }
 
 const Card = ({
@@ -38,6 +48,14 @@ const Card = ({
   img8,
   title,
   url,
+  tool,
+  tool2,
+  tool3,
+  tool4,
+  tool5,
+  tool6,
+  description,
+  stacks,
 }: CardProps) => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({ target: ref });
@@ -50,13 +68,14 @@ const Card = ({
         {title}
       </motion.h2>
       <div className="project__image" ref={ref}>
+        <span className="project__stacks">{stacks}</span>
         <ul className="carrusel">
           <li className="carrusel__imgs">
             <img
               src={img}
               alt={`project fullstack ${title}`}
               height={200}
-              width={200}
+              width={240}
             />
           </li>
           <li className="carrusel__imgs">
@@ -64,7 +83,7 @@ const Card = ({
               src={img2}
               alt={`project fullstack ${title}`}
               height={200}
-              width={200}
+              width={240}
             />
           </li>
           <li className="carrusel__imgs">
@@ -72,7 +91,7 @@ const Card = ({
               src={img3}
               alt={`project fullstack ${title}`}
               height={200}
-              width={200}
+              width={240}
             />
           </li>
           <li className="carrusel__imgs">
@@ -80,7 +99,7 @@ const Card = ({
               src={img4}
               alt={`project fullstack ${title}`}
               height={200}
-              width={200}
+              width={240}
             />
           </li>
           <li className="carrusel__imgs">
@@ -88,7 +107,7 @@ const Card = ({
               src={img5}
               alt={`project fullstack ${title}`}
               height={200}
-              width={200}
+              width={240}
             />
           </li>
           <li className="carrusel__imgs">
@@ -96,7 +115,7 @@ const Card = ({
               src={img6}
               alt={`project fullstack ${title}`}
               height={200}
-              width={200}
+              width={240}
             />
           </li>
           <li className="carrusel__imgs">
@@ -104,7 +123,7 @@ const Card = ({
               src={img7}
               alt={`project fullstack ${title}`}
               height={200}
-              width={200}
+              width={240}
             />
           </li>
           <li className="carrusel__imgs">
@@ -112,7 +131,7 @@ const Card = ({
               src={img8}
               alt={`project fullstack ${title}`}
               height={200}
-              width={200}
+              width={240}
             />
           </li>
         </ul>
@@ -123,35 +142,17 @@ const Card = ({
           height={30}
         />
       </div>
-      <div className="projects__skills">
-        <img
-          src="/img/typescript.svg"
-          alt="the typescript logo"
-          width={30}
-          height={30}
-        />
-        <img src="/img/react.svg" alt="the react logo" width={30} height={30} />
-        <img
-          src="/img/nodejs.svg"
-          alt="the nodejs logo"
-          width={30}
-          height={30}
-        />
-        <img
-          src="/img/firebase.svg"
-          alt="the firebase logo"
-          width={30}
-          height={30}
-        />
-        <img src="/img/vite.svg" alt="the vite logo" width={30} height={30} />
-        <img src="/img/redux.svg" alt="the redux logo" width={30} height={30} />
-        <img
-          src="/img/postman.png"
-          alt="the postman logo"
-          width={30}
-          height={30}
-        />
+      <div className="projects__description">
+        <p className="projects__description">{description}</p>
       </div>
+      <ul className="projects__skills">
+        <li className="project__tool">{tool}</li>
+        <li className="project__tool">{tool2}</li>
+        <li className="project__tool">{tool3}</li>
+        <li className="project__tool">{tool4}</li>
+        <li className="project__tool">{tool5}</li>
+        <li className="project__tool">{tool6}</li>
+      </ul>
       <div className="live-demo-container">
         <a href={url}>{text("projects.projects-demo")}</a>
         <img src={link} alt="link to the site" width="18" height="18" />

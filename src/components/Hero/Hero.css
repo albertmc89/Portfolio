@@ -3,8 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 40px 20px;
-  height: calc(100vh);
+  padding: 20px 20px;
 }
 
 .hero-container__image {
@@ -13,12 +12,13 @@
   border-radius: 50% 50% 50% 50% / 30% 80% 40% 50%;
   object-fit: cover;
   object-position: center;
-  box-shadow: 1px 0.1px 77px 0px rgb(151, 151, 153);
+  box-shadow: 1px 0.1px 55px 0px rgb(151, 151, 153);
 }
 
 .logo {
   color: white;
 }
+
 .section__text {
   display: flex;
   flex-direction: column;
@@ -29,7 +29,6 @@
 
 .section__title {
   font-size: 1.8rem;
-  padding: 20px;
   font-weight: 700;
   color: white;
 }
@@ -38,14 +37,14 @@
   margin: 10px 0;
   font-size: 1rem;
   font-weight: 600;
-  color: rgb(155, 152, 152);
+  color: rgba(61, 242, 255, 0.8);
 }
 
 .section__skills {
   margin-bottom: 10px;
   font-size: 1rem;
   font-weight: 600;
-  color: rgb(166, 174, 201);
+  color: rgba(223, 241, 25, 0.85);
 }
 
 .section__subtext {
@@ -64,6 +63,7 @@
 
 .button-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 10px;
 }
@@ -76,25 +76,15 @@
   font-size: 0.7rem;
   border: 2px solid white;
   border-radius: 30px;
-  width: 115px;
-  height: 40px;
+  height: 35px;
+  width: 190px;
+  padding: 0 5px;
 }
 
-.button--opacity {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 115px;
-  height: 40px;
-  font-size: 0.7rem;
-  border: 2px solid white;
-  border-radius: 30px;
-  cursor: pointer;
-}
-
-.button--opacity:hover {
-  background-color: white;
-  color: black;
+.button--solid:hover {
+  border: 2px solid rgba(61, 242, 255, 0.691);
+  font-size: 0.75rem;
+  background-color: rgba(61, 242, 255, 0.08);
 }
 
 @media screen and (min-width: 760px) {
@@ -104,12 +94,23 @@
     align-items: center;
     justify-content: center;
     gap: 60px;
-    padding: 40px 20px;
+    padding: 10px 20px;
     height: calc(100vh);
   }
 
   .hero-container__image {
     width: 250px;
     height: 270px;
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .section__title {
+    font-size: 2.1rem;
   }
 }

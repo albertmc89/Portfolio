@@ -11,7 +11,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: linear-gradient(-55deg, #1d1d1d, #232323, #141414, #000000);
+  background: linear-gradient(
+    -55deg,
+    rgba(21, 21, 21, 0.94),
+    rgba(21, 21, 21, 0.94),
+    rgba(21, 21, 21, 0.94),
+    rgba(21, 21, 21, 0.94)
+  );
   background-size: 400% 400%;
   animation: gradient 5s ease infinite;
 }

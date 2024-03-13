@@ -19,8 +19,13 @@
     "projects-title": "My projects",
     "projects-demo": "Live demo"
   },
-  "contact": {
-    "contact": "Contact",
-    "contact-title": "Contact me"
+  "technologies": {
+    "technologies": "Skills",
+    "technologies-title": "Skills"
+  },
+  "description": {
+    "description-players": "Fullstack web CRUD project with the purpose of creating a self-administered collection manager and serving content through API services which are consumed client-side. This involves building a user-friendly interface for the end user to navigate and visualize different players and their professional records. The website functionality includes saving players marked as bought or sold in the user's session, as well as allowing them to delete and add new players through a form.",
+    "description-netflix": "The project is a frontend clone of Netflix's user interface. It allows users to browse through a wide range of movies and series, from the latest releases to any title the user may be looking for. The interface provides advanced filters to facilitate search and navigation, enabling users to find content by genre, release year, rating, and more. The user experience focuses on providing intuitive and visually appealing navigation, with striking images and concise descriptions for each title. Additionally, the project includes features such as the ability to mark movies or series as favorites, save viewing progress, and receive personalized recommendations based on viewing history. To achieve this, HTML, CSS, and TypeScript are used, along with modern libraries or frameworks like React.js. The interface is responsively designed to ensure an optimal user experience on mobile devices, tablets, and desktop computers. Overall, this project demonstrates skills in user interface design, frontend development, and dynamic data handling.",
+    "description-investwise": "Fullstack web CRUD project aimed at creating a self-administered property management system, allowing users to view their investments, check their rental status, and monitor their property performance in terms of percentage returns. The project serves content through API services consumed client-side, featuring a user-friendly interface for easy navigation and visualization of different properties and their financial metrics.Users can conveniently access their property portfolio, view rental statuses, and assess the profitability of their investments through interactive charts and reports. Additionally, the website saves user-selected properties and allows for the addition and deletion of new properties via forms, enhancing user control and convenience.Utilizing modern web development technologies, including HTML, CSS, TypeScript, and frameworks such as React.js, the project ensures responsiveness across various devices and seamless integration with backend services. This project not only showcases proficiency in fullstack development and API integration but also highlights expertise in financial data visualization and user-centric design, making it a valuable asset for any portfolio."
   }
 }

@@ -4,7 +4,8 @@ import Navigation from "../Nav/Nav";
 import Portfolio from "../Portfolio/Portfolio";
 import "./App.css";
 import About from "../About/About";
-import Contact from "../Contact/Contact";
+import Technologies from "../Technologies/Technologies";
+import Footer from "../Footer/Footer";
 
 const App = (): React.ReactElement => {
   const { scrollYProgress } = useScroll();
@@ -19,8 +20,9 @@ const App = (): React.ReactElement => {
       <Hero />
       <About />
       <Portfolio />
-      <Contact />
+      <Technologies />
       <motion.div className="progress" style={{ scaleX }} />
+      <Footer />
     </div>
   );
 };

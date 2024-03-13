@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 import home from "/img/home.png";
 import about from "/img/about.png";
 import projects from "/img/projects.png";
-import contact from "/img/contact.png";
+import technologies from "/img/contact.png";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
@@ -84,12 +84,17 @@ const Navigation = (): React.ReactElement => {
                   ? "navigation-list__active"
                   : "navigation-list__inactive"
               }
-              to="contact"
+              to="technologies"
             >
               {!isDesktop ? (
-                <img src={contact} alt="home icon" width="24" height="24" />
+                <img
+                  src={technologies}
+                  alt="home icon"
+                  width="24"
+                  height="24"
+                />
               ) : (
-                text("contact.contact")
+                text("technologies.technologies")
               )}
             </Link>
           </li>

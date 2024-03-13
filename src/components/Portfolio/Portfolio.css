@@ -21,4 +21,8 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
   }
+
+  .projects__portfolio:nth-child(3) {
+    grid-column: 1 / 3;
+  }
 }
