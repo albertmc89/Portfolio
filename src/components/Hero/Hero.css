@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   padding: 20px 20px;
+  min-height: 100vh;
 }
 
 .hero-container__image {

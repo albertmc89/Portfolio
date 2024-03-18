@@ -11,15 +11,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: linear-gradient(
-    -55deg,
-    rgba(21, 21, 21, 0.94),
-    rgba(21, 21, 21, 0.94),
-    rgba(21, 21, 21, 0.94),
-    rgba(21, 21, 21, 0.94)
-  );
-  background-size: 400% 400%;
-  animation: gradient 5s ease infinite;
+  background: url(/public/img/background-desktop.webp);
+  background-repeat: repeat;
+  background-size: cover;
 }
 
 @keyframes gradient {
