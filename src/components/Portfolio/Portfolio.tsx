@@ -43,7 +43,7 @@ const Portfolio = (): React.ReactElement => {
               img7={"/img/ProjectNetflix3.webp"}
               img8={"/img/ProjectNetflix4.webp"}
               title={"'Netflix' clone WIP"}
-              url="https://colnetflix-clone.netlify.app"
+              url="https://colfilm.netlify.app"
               tool={"TypeScript"}
               tool2={"ReactJS"}
               tool3={"NodeJS"}
