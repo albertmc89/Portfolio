@@ -8,6 +8,7 @@ import {
 import { useRef } from "react";
 import "./Card.css";
 import link from "/img/link.png";
+import githublogo from "/img/github.svg";
 import { useTranslation } from "react-i18next";
 
 function useParallax(value: MotionValue<number>, distance: number) {
@@ -35,6 +36,7 @@ interface CardProps {
   tool8?: string;
   description: string;
   stacks: string;
+  github: string;
 }
 
 const Card = ({
@@ -56,6 +58,7 @@ const Card = ({
   tool6,
   description,
   stacks,
+  github,
 }: CardProps) => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({ target: ref });
@@ -153,10 +156,17 @@ const Card = ({
         <li className="project__tool">{tool5}</li>
         <li className="project__tool">{tool6}</li>
       </ul>
-      <div className="live-demo-container">
-        <a href={url}>{text("projects.projects-demo")}</a>
-        <img src={link} alt="link to the site" width="18" height="18" />
-      </div>
+      <ul className="links-container">
+        <li className="links-container__demo">
+          <a href={url}>{text("projects.projects-demo")}</a>
+          <img src={link} alt="link to the site" width="18" height="18" />
+        </li>
+        <li className="live-demo-container">
+          <a href={github}>
+            <img src={githublogo} alt="link to github" width="28" height="28" />
+          </a>
+        </li>
+      </ul>
     </article>
   );
 };

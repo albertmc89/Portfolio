@@ -17,7 +17,8 @@
   "projects": {
     "projects": "Projects",
     "projects-title": "My projects",
-    "projects-demo": "Live demo"
+    "projects-demo": "Live demo",
+    "projects-github": "Github"
   },
   "technologies": {
     "technologies": "Skills",
