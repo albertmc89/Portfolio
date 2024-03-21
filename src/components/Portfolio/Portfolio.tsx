@@ -30,6 +30,7 @@ const Portfolio = (): React.ReactElement => {
               tool7={"Firebase"}
               description={text("description.description-players")}
               stacks={"Fullstack"}
+              github={"https://github.com/albertmc89/Fantasy-Legends-FRONT"}
             />
           </li>
           <li className="projects__portfolio">
@@ -52,6 +53,7 @@ const Portfolio = (): React.ReactElement => {
               tool6={"Axios"}
               description={text("description.description-netflix")}
               stacks={"Frontend"}
+              github={"https://github.com/albertmc89/Colflix-FRONT"}
             />
           </li>
           <li className="projects__portfolio">
@@ -75,6 +77,7 @@ const Portfolio = (): React.ReactElement => {
               tool7={"Firebase"}
               description={text("description.description-investwise")}
               stacks={"Fullstack"}
+              github={"https://github.com/albertmc89/investWise-FRONT"}
             />
           </li>
         </ul>

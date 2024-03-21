@@ -11,7 +11,7 @@ import node from "../../../public/img/nodejs.svg";
 import mongodb from "../../../public/img/mongodb.svg";
 import express from "../../../public/img/express.svg";
 import firebase from "../../../public/img/firebase.svg";
-import postman from "../../../public/img/postman.png";
+import postman from "../../../public/img/postman.svg";
 import mysql from "../../../public/img/mysql.svg";
 import next from "../../../public/img/next.svg";
 import github from "../../../public/img/github.svg";
@@ -155,7 +155,7 @@ const Contact = () => {
                 width="45"
                 height="45"
               />
-              <h3>React-route-domr</h3>
+              <h3>React-route-dom</h3>
             </div>
             <div className="frontend__tg">
               <img src={axios} alt="Axios svg logo" width="45" height="45" />
